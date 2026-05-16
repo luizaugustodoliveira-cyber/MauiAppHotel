@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Sobre"
+             Title="Sobre"
+             BackgroundColor="#19130F">
+
+    <ScrollView>
+
+        <VerticalStackLayout Padding="30"
+                             Spacing="25"
+                             VerticalOptions="Center">
+
+            <Label Text="Sobre o Projeto"
+                   HorizontalOptions="Center"
+                   FontSize="25"
+                   FontFamily="CormorantBold"
+                   TextColor="#F8F3ED"/>
+
+            <Border BackgroundColor="#2A211B"
+                    Stroke="#6E5846"
+                    StrokeThickness="1"
+                    Padding="25"
+                    StrokeShape="RoundRectangle 20">
+
+                <VerticalStackLayout Spacing="18">
+
+                    <Label Text="Desenvolvido por: Luiz Augusto de O. Ribeiro"
+                           FontSize="15"
+                           FontFamily="CormorantRegular"
+                           TextColor="#F8F3ED"/>
+                    
+                    <Label Text="Email para contato: luizaugustodoliveira@gmail.com"
+                           FontSize="15"
+                           FontFamily="CormorantRegular"
+                           TextColor="#F8F3ED"/>
+
+                    <Label Text="© 2026"
+                           FontSize="15"
+                           FontFamily="CormorantRegular"
+                           TextColor="#F8F3ED"/>
+
+
+                </VerticalStackLayout>
+
+            </Border>
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>
