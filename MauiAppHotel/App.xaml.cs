@@ -1,6 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-
-namespace MauiAppHotel
+﻿namespace MauiAppHotel
 {
     public partial class App : Application
     {
@@ -11,7 +9,11 @@ namespace MauiAppHotel
 
         protected override Window CreateWindow(IActivationState? activationState)
         {
-            var window = new Window(new AppShell());
+            var window = new Window(
+                new NavigationPage(
+                    new Views.ContratacaoHospedagem()
+                )
+            );
 
             window.Width = 400;
             window.Height = 600;
