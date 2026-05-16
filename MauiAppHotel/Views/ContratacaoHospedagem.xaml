@@ -59,7 +59,7 @@
 
                     <Label Grid.Row="1"
                            Grid.Column="0"
-                           Text="Adultos:"
+                           Text="Crianças:"
                            FontSize="20"
                            FontFamily="CormorantRegular"
                            VerticalOptions="Center"/>
