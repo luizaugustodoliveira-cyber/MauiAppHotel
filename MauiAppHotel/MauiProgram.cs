@@ -15,6 +15,9 @@ namespace MauiAppHotel
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                     fonts.AddFont("EduAUVICWANTGuides-VariableFont_wght.ttf", "Edu");
                     fonts.AddFont("NothingYouCouldDo-Regular.ttf", "NothingYouCouldDo");
+                    fonts.AddFont("CormorantGaramond-Bold.ttf", "CormorantBold");
+                    fonts.AddFont("CormorantGaramond-Medium.ttf", "CormorantMedium");
+                    fonts.AddFont("CormorantGaramond-Regular.ttf", "CormorantRegular");
 
 
                 });

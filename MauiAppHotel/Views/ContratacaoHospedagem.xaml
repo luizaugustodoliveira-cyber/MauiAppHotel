@@ -13,7 +13,7 @@
                  HorizontalOptions="Center"
                  FontSize="30"
                  FontAttributes="Bold"
-                 FontFamily="Poppins"
+                 FontFamily="CormorantBold"
                  TextColor="#F8F3ED"
                  BackgroundColor="#19130F"
                  Margin="0,0,0,15"
@@ -29,28 +29,46 @@
                 >
 
             <VerticalStackLayout Spacing="18">
-                <Grid RowDefinitions="Auto, Auto"
-                      ColumnDefinitions="*, *, 2*">
-                    
-                    <Label Grid.Row="0" Grid.Column="0"
-                           Text="Adultos:" />
+                <Grid RowDefinitions="Auto,Auto"
+                      ColumnDefinitions="2*,Auto,2*"
+                      RowSpacing="18"
+                      ColumnSpacing="20">
 
-                    <Label Grid.Row="0" Grid.Column="1"
+                    <Label Grid.Row="0"
+                           Grid.Column="0"
+                           Text="Adultos:"
+                           FontSize="20"
+                           FontFamily="CormorantRegular"
+                           VerticalOptions="Center"/>
+
+                    <Label Grid.Row="0"
+                           Grid.Column="1"
                            TextColor="#E0B37A"
+                           FontSize="20"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
                            Text="{Binding Value}"
                            BindingContext="{x:Reference stp_adultos}"/>
-
+                    
                     <Stepper Grid.Row="0" Grid.Column="2"
                              x:Name="stp_adultos"
                              Minimum="0"
                              Maximum="10"
-                             Increment="1" />
+                             Increment="1" 
+                             HorizontalOptions="End"/>
 
-                    <Label Grid.Row="1" Grid.Column="0"
-                           Text="Crianças:" />
+                    <Label Grid.Row="1"
+                           Grid.Column="0"
+                           Text="Adultos:"
+                           FontSize="20"
+                           FontFamily="CormorantRegular"
+                           VerticalOptions="Center"/>
 
                     <Label Grid.Row="1" Grid.Column="1"
                            TextColor="#E0B37A"
+                           FontSize="20"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
                            Text="{Binding Value}"
                            BindingContext="{x:Reference stp_criancas}"/>
 
@@ -58,18 +76,22 @@
                              x:Name="stp_criancas"
                              Minimum="0"
                              Maximum="10"
-                             Increment="1" />
+                             Increment="1"
+                             HorizontalOptions="End"/>
 
                 </Grid>
 
                 <Label Text="Escolha sua suíte"
+                       FontSize="20"
                        Margin="0,20,0,0"
+                       FontFamily="CormorantRegular"
                        
                        />
 
 
                 <Picker x:Name="pck_quarto"
-                        Title="Selecione sua Acomodação"/>
+                        Title="Selecione sua Acomodação"
+                        FontFamily="CormorantRegular"/>
 
                 <Border BackgroundColor="#3A2C23"
                         StrokeThickness="0"
@@ -80,6 +102,8 @@
                     <VerticalStackLayout>
                         
                         <Label Text="Período da Estadia"
+                               FontSize="20"
+                               FontFamily="CormorantRegular"
                                Margin="0,0,0,15"/>
                         
                         <HorizontalStackLayout>
@@ -92,6 +116,7 @@
                                 <Label  Grid.Row="0"
                                         Grid.Column="0"
                                         Text="Check-in:"
+                                        FontFamily="CormorantRegular"
                                         VerticalOptions="Center"/>
 
                                     <Border Grid.Row="0"
@@ -111,6 +136,7 @@
                                     <Label Grid.Row="1"
                                             Grid.Column="0"
                                             Text="Check-out:"
+                                           FontFamily="CormorantRegular"
                                             VerticalOptions="Center"/>
 
                                     <Border Grid.Row="1"
@@ -138,6 +164,8 @@
                 <Button Text="Avançar"
                         HeightRequest="55"
                         CornerRadius="18"
+                        FontSize="20"
+                        FontFamily="CormorantRegular"
                         BackgroundColor="#D6A062"
                         TextColor="#2A1B12"               />
 
