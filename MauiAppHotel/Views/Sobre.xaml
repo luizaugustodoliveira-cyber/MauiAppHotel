@@ -3,7 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppHotel.Views.Sobre"
              Title="Sobre"
-             BackgroundColor="#19130F">
+             BackgroundColor="#19130F"
+             NavigationPage.HasNavigationBar="False">
+    
+             
 
     <ScrollView>
 
